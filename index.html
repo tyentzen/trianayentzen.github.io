@@ -210,6 +210,17 @@
     </div>
 
     <script>
+	function toggleAbstract(abstractId, button) {
+    const abstract = document.getElementById(abstractId);
+    if (abstract.classList.contains('hidden')) {
+        abstract.classList.remove('hidden');
+        button.textContent = 'Hide Abstract';
+    } else {
+        abstract.classList.add('hidden');
+        button.textContent = 'Show Abstract';
+    }
+}
+
         const menuButton = document.getElementById('menu-button');
         const menuLinks = document.getElementById('menu-links');
 
